@@ -1,0 +1,126 @@
+:root {
+  --color-dark: #0d0b0c;
+  --color-medium-dark: #594a3e;
+  --color-light: #d9d0c7;
+  --color-highlight: #bf7c63;
+  --color-highlight-gradient: #9c6551;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 67.5rem;
+  background: linear-gradient(
+    150deg,
+    var(--color-dark),
+    var(--color-medium-dark)
+  );
+}
+
+.container {
+  border: 0.1rem solid var(--color-highlight);
+  width: 80%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 1.875rem 2.5rem;
+}
+
+#newtask {
+  background-color: var(--color-light);
+  padding: 1.875rem 1.25rem;
+  background-color: var(--color-light);
+  padding: 1.875rem 2.5rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+#newtask input {
+  width: 70%;
+  height: 2.875rem;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0.15rem solid var(--color-highlight);
+  padding: 0.8rem;
+  color: var(--color-dark);
+  position: relative;
+  border-radius: 0.45rem;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: var(--color-highlight-gradient);
+}
+
+#newtask button {
+  position: relative;
+  float: right;
+  width: 25%;
+  height: 2.875rem;
+  border-radius: 0.45rem;
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+  font-weight: 650;
+  background-color: var(--color-highlight);
+  border: none;
+  transition: 1s;
+}
+
+#newtask button:focus {
+  outline: none;
+}
+
+#newtask button:hover {
+  background-color: var(--color-highlight-gradient);
+}
+
+#tasks {
+  background-color: var(--color-light);
+  padding: 1.875rem 1.25rem;
+  margin-top: 3.75rem;
+  border-radius: 0.45rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  width: 100%;
+  position: relative;
+}
+
+.task {
+  background-color: var(--color-light);
+  height: 3.125rem;
+  padding: 0.3rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid --color-highlight;
+  cursor: pointer;
+}
+
+.task span {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.task button {
+  background-color: var(--color-highlight);
+  color: var(--color-dark);
+  height: 100%;
+  width: 2.5rem;
+  border-radius: 0.45rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
