@@ -7,13 +7,13 @@ document.querySelector("#push").onclick = function () {
             <span id="taskname">
                 ${document.querySelector("#newtask input").value}
             </span>
-            <button class="delete">
+            <button class="apagar">
                 <ion-icon name="checkmark-sharp"></ion-icon>
             </button>
         </div>
     `;
 
-    let current_tasks = document.querySelectorAll(".delete");
+    let current_tasks = document.querySelectorAll(".apagar");
     for (let i = 0; i < current_tasks.length; i++) {
       current_tasks[i].onclick = function () {
         this.parentNode.remove();

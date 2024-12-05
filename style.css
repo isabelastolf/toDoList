@@ -119,8 +119,30 @@ body {
   border: none;
   cursor: pointer;
   outline: none;
+  transition: 1s;
 }
 
+.task button:hover {
+  background-color: var(--color-highlight-gradient);
+  color: var(--color-dark);
+}
+
+.apagar {
+  background-color: var(--color-highlight);
+  color: var(--color-dark);
+  height: 100%;
+  width: 2.5rem;
+  border-radius: 0.45rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: 1s;
+}
+
+.apagar:hover {
+  background-color: var(--color-highlight-gradient);
+  color: var(--color-dark);
+}
 .completed {
   text-decoration: line-through;
 }
